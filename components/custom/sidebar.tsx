@@ -17,7 +17,7 @@ export function SidebarContent() {
         <div className="flex h-full flex-col">
             <div className="flex items-center gap-2 px-5 py-5">
                 <div className="w-32">
-                    <img src="/troza.png" alt="Troza" />
+                    <img src="/troza-nobg.png" alt="Troza" />
                 </div>
             </div>
 

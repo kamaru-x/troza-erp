@@ -21,7 +21,7 @@ const page = () => {
             <Card className="w-full max-w-md border-border/60 shadow-lg p-5">
                 <CardHeader className="flex flex-col items-center gap-2 text-center">
                     <div className="w-50">
-                        <img src="troza.png" alt="" />
+                        <img src="troza-nobg.png" alt="" />
                     </div>
                 </CardHeader>
         

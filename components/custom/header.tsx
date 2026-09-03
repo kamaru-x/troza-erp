@@ -55,6 +55,7 @@ export function Header() {
                     </div>
 
                     <div className="flex items-center gap-2 sm:gap-4">
+                        {/* Full search bar — sm and up */}
                         <div className="relative hidden w-72 sm:block">
                             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                             <Input
@@ -63,14 +64,15 @@ export function Header() {
                             />
                         </div>
 
-                        <button
-                            onClick={() => setMobileSearchOpen(true)}
-                            className="flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground hover:bg-muted hover:text-foreground sm:hidden"
-                        >
-                            <Search className="h-5 w-5" />
-                        </button>
-
+                        {/* Capsule: search (mobile only) + theme toggle + notifications + profile */}
                         <div className="flex h-10 items-center gap-1 rounded-full border border-border bg-muted/50 p-1">
+                            <button
+                                onClick={() => setMobileSearchOpen(true)}
+                                className="flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-background hover:text-foreground sm:hidden"
+                            >
+                                <Search className="h-4 w-4" />
+                            </button>
+
                             <button
                                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
                                 className="relative flex h-8 w-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-background hover:text-foreground"
