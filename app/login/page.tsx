@@ -8,11 +8,10 @@ import { Label } from "@/components/ui/label";
 import {Card, CardContent, CardHeader} from "@/components/ui/card";
 
 const page = () => {
-    const [showPassword, setShowPassword] = useState(false);
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     
-    const handleSubmit = (e) => {
+    const handleSubmit = (e:any) => {
         e.preventDefault();
         console.log({ username, password });
     };
